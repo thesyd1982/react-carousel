@@ -1,0 +1,25 @@
+.slide {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    color: #ddd;
+
+    .slide-content {
+        .slide-title {
+            font-size: 5rem;
+
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .slide-description {
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.5rem;
+            max-width: calc(100% - 300px);
+
+        }
+
+    }
+}

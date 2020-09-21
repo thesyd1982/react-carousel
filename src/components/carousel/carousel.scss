@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+.carousel {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+$slider-height:100vh;
+$arrows-height:4rem;
+$dot-border-radius:25%;
+$dot-heigth:1rem;
+$dot-hover-heigth:1.2rem;
+$dot-active-heigth:1.5rem;
+$dot-margin:1rem;
+$dots-margin-bottom:10rem;
+
+$dot-background-color:#777;
+$dot-hover-background-color:#ddd;
+$dot-active-background-color:#eee;
+
+
+@keyframes fade-in-fwd {
+    0% {
+        -webkit-transform: translateZ(-80px);
+        transform: translateZ(-80px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}

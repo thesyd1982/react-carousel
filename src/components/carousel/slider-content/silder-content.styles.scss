@@ -1,0 +1,26 @@
+@import "../carousel.scss";
+
+.slider-content {
+
+    position: relative;
+
+    .arrows {
+        position: absolute;
+        top: calc(50% - #{$arrows-height}/2);
+        width: 100%;
+    }
+
+    .dots {
+        position: absolute;
+        top: calc(100% - #{$dots-margin-bottom});
+        width: 100%;
+        margin-bottom: 10rem;
+    }
+
+    .slides {
+
+        width: 100%;
+        height: 100%;
+    }
+
+}

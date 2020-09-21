@@ -1,0 +1,40 @@
+  @import "../../carousel.scss";
+
+  .arrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      height: $arrows-height;
+      width: $arrows-height;
+
+      cursor: pointer;
+      opacity: 0.6;
+      background-color: #fff;
+
+      &:hover {
+          opacity: 0.8;
+      }
+
+      &.arrow--left {
+          height: $arrows-height/2;
+          width: $arrows-height/2;
+          //margin-left: 1rem;
+          background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+
+      }
+
+      &.arrow--right {
+
+          height: $arrows-height/2;
+          width: $arrows-height/2;
+          background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+
+      }
+
+      &:hover {
+          color: red;
+
+      }
+
+  }

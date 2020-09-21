@@ -1,0 +1,73 @@
+  @import "../../carousel.scss";
+
+
+  .dot {
+      width: $dot-heigth;
+      height: $dot-heigth;
+
+      background-color: $dot-background-color;
+      border-radius: $dot-border-radius;
+
+
+      &::before {
+          position: relative;
+          top: 0;
+          left: -$dot-margin;
+          display: block;
+
+
+          width: $dot-margin;
+          height: $dot-margin;
+          content: "";
+
+      }
+
+
+
+      &::after {
+
+          position: relative;
+          top: -$dot-margin;
+          right: -$dot-margin;
+          display: block;
+
+          width: $dot-margin;
+          height: $dot-margin;
+          content: "";
+
+      }
+
+      &.active {
+
+          width: $dot-active-heigth;
+          height: $dot-active-heigth;
+
+          background-color: $dot-active-background-color;
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+
+
+          &::before {
+              top: 0;
+              left: -$dot-active-heigth;
+              width: $dot-active-heigth;
+              height: $dot-active-heigth;
+          }
+
+          &::after {
+              top: -$dot-active-heigth;
+              right: -$dot-active-heigth;
+              width: $dot-active-heigth;
+              height: $dot-active-heigth;
+          }
+
+
+      }
+
+      margin: $dot-margin;
+
+      &:hover {
+          cursor: pointer;
+          background: $dot-hover-background-color;
+      }
+  }
